@@ -8,7 +8,7 @@ const AppNavbar = () => {
                 <>
                     <section className="flex-1">
                         <h1 className="text-xl">
-                            Hire a Clown 🤡
+                            ClownConnect 🤡
                         </h1>
                     </section>
                     <section className="flex gap-4">
