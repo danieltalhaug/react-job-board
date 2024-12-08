@@ -1,0 +1,34 @@
+import Container from './Container';
+import Button from './Button';
+
+const AppNavbar = () => {
+	return (
+        <header className="navbar bg-base-300">
+            <Container el={'nav'}>
+                <>
+                    <section className="flex-1">
+                        <h1 className="text-xl">
+                            Hire a Clown 🤡
+                        </h1>
+                    </section>
+                    <section className="flex gap-4">
+                        <Button
+                            text={'Home'}
+                            variation="ghost"
+                        />
+                        <Button
+                            text={'Jobs'}
+                            variation="ghost"
+                        />
+                        <Button
+                            text={'Add job'}
+                            variation="ghost"
+                        />
+                    </section>
+                </>
+            </Container>
+        </header>
+	);
+};
+
+export default AppNavbar;
