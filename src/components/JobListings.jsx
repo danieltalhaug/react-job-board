@@ -40,6 +40,7 @@ const JobListings = () => {
                 {getRandomJobs().map((job) => (
                     <Card
                         key={job.id}
+                        preTitle={job.salary}
                         title={job.title}
                         subtitle={job.description}
                         theme="light"
