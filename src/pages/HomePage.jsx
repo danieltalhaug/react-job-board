@@ -7,7 +7,7 @@ const HomePage = () => {
         <>
             <FrontPageHero />
             <FrontPageCards />
-            <JobListings />
+            <JobListings limit="6" />
         </>
     );
 };
