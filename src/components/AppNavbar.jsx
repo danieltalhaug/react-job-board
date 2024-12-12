@@ -15,10 +15,12 @@ const AppNavbar = () => {
                         <Button
                             text={'Home'}
                             variation="ghost"
+                            to="/"
                         />
                         <Button
                             text={'Jobs'}
                             variation="ghost"
+                            to="/jobs"
                         />
                         <Button
                             text={'Add job'}
