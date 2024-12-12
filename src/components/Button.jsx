@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
+
 const Button = (props) => {
-    const { text, isActive, outline, disabled, variation, color } = props;
+    const { text, isActive, outline, variation, color, ...restProps } = props;
     const colors = {
         primary: 'btn-primary',
         secondary: 'btn-secondary',
@@ -11,18 +13,15 @@ const Button = (props) => {
         ghost: 'btn-ghost',
     };
 
+    const Element = restProps.to ? Link : 'button';
+
 	return (
-        <button
-            className={`
-                btn ${isActive && 'btn-active'}
-                ${outline && 'btn-outline'}
-                ${variation ? variations[variation] : ''}
-                ${colors ? colors[color] : ''}
-            `}
-            disabled={disabled}
+        <Element
+            className={`btn ${isActive && 'btn-active'} ${outline && 'btn-outline'} ${variation ? variations[variation] : ''} ${colors ? colors[color] : ''}`}
+            {...restProps}
         >
             { text }
-        </button>
+        </Element>
 	);
 };
 
