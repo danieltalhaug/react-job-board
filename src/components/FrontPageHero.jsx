@@ -1,4 +1,4 @@
-const AppHero = () => {
+const FrontPageHero = () => {
     return (
         <article className="hero bg-base-200 py-16">
             <section className="hero-content text-center">
@@ -21,4 +21,4 @@ const AppHero = () => {
     );
 };
 
-export default AppHero;
+export default FrontPageHero;
