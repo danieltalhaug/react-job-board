@@ -1,7 +1,10 @@
 import Container from './Container';
 import Button from './Button';
+import { useLocation } from "react-router-dom";
 
 const AppNavbar = () => {
+    const { pathname } = useLocation();
+
 	return (
         <header className="navbar bg-base-300">
             <Container el={'nav'}>
@@ -16,11 +19,13 @@ const AppNavbar = () => {
                             text={'Home'}
                             variation="ghost"
                             to="/"
+                            isActive={pathname === '/'}
                         />
                         <Button
                             text={'Jobs'}
                             variation="ghost"
                             to="/jobs"
+                            isActive={pathname === '/jobs'}
                         />
                         <Button
                             text={'Add job'}
