@@ -30,6 +30,8 @@ const AppNavbar = () => {
                         <Button
                             text={'Add job'}
                             variation="ghost"
+                            to="/create"
+                            isActive={pathname === '/create'}
                         />
                     </section>
                 </>
