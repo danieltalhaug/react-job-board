@@ -9,7 +9,7 @@ const cards = [
         action: {
             text: 'Browse jobs',
             color: 'primary',
-            href: '',
+            to: '/jobs',
         }
     },
     {
@@ -18,7 +18,7 @@ const cards = [
         action: {
             text: 'Add job',
             color: 'secondary',
-            href: '',
+            to: '',
         }
     }
 ];
@@ -37,6 +37,7 @@ const HomeCards = () => {
                             <Button
                                 text={card.action.text}
                                 color={card.action.color}
+                                to={card.action.to}
                             />
                         </Card>
                     ))}
